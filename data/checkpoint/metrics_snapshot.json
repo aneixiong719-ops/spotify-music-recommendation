@@ -1,0 +1,155 @@
+{
+ "project": "Personalized Music Recommendation System",
+ "snapshot_date": "2026-11-23",
+ "stage": "CRISP-DM phase 3.2 (data expansion pending)",
+ "sources": {
+  "ListenBrainz": "Public listening events; 2025–2026 sample",
+  "Embeat": "Spotify track catalog with audio features"
+ },
+ "phase2": {
+  "listen_events": 1100,
+  "users": 6,
+  "original_unique_tracks": 860,
+  "original_observed_user_tracks": 878,
+  "original_matrix_density": 17.02,
+  "missing_spotify_ids_events": 906,
+  "missing_spotify_ids_pct": 82.36,
+  "missing_recording_mbid_events": 51,
+  "missing_recording_mbid_pct": 4.64,
+  "duplicates": 0,
+  "initial_spotify_ids": 122,
+  "expanded_spotify_ids": 191,
+  "embeat_ids_matched": 155,
+  "match_pct": 81.15,
+  "reliable_events": 201,
+  "event_coverage_pct": 18.27,
+  "ambiguous_events": 26,
+  "unmatched_events": 873
+ },
+ "phase3": {
+  "mbids_tested": 100,
+  "successful_mbids": 73,
+  "failed_mbids": 27,
+  "remaining_mbids": 648,
+  "spotify_ids_searched": 218,
+  "spotify_ids_matched": 182,
+  "spotify_ids_unmatched": 36,
+  "spotify_match_pct": 83.49,
+  "direct_events": 163,
+  "mapped_events": 57,
+  "ambiguous_events": 40,
+  "unmatched_events": 840,
+  "provisional_events": 220,
+  "provisional_coverage_pct": 20.0,
+  "high_agreement_events": 174,
+  "high_agreement_pct_matched": 79.09,
+  "needs_review_events": 27,
+  "mismatch_events": 19,
+  "events_to_review": 46,
+  "distinct_combinations_to_review": 29,
+  "model_candidates": 174,
+  "model_candidate_coverage_pct": 15.82,
+  "unique_user_track_pairs": 111,
+  "unique_tracks": 107,
+  "repeated_events": 63,
+  "possible_interactions": 642,
+  "density_pct": 17.29,
+  "sparsity_pct": 82.71,
+  "user_pairs_shared": 2,
+  "user_pairs_possible": 15,
+  "metadata_reclassified": 9
+ },
+ "users": [
+  {
+   "user_id": "rob",
+   "original_listens": 200,
+   "phase2_matched": 20,
+   "phase3_matched": 25,
+   "modeling_events": 23,
+   "unique_tracks": 19,
+   "original_unique_tracks": 142,
+   "original_unique_artists": 41
+  },
+  {
+   "user_id": "Violet&Red",
+   "original_listens": 200,
+   "phase2_matched": 29,
+   "phase3_matched": 29,
+   "modeling_events": 23,
+   "unique_tracks": 20,
+   "original_unique_tracks": 165,
+   "original_unique_artists": 58
+  },
+  {
+   "user_id": "mcc1979",
+   "original_listens": 200,
+   "phase2_matched": 0,
+   "phase3_matched": 8,
+   "modeling_events": 4,
+   "unique_tracks": 3,
+   "original_unique_tracks": 185,
+   "original_unique_artists": 21
+  },
+  {
+   "user_id": "Arete01",
+   "original_listens": 100,
+   "phase2_matched": 0,
+   "phase3_matched": 6,
+   "modeling_events": 6,
+   "unique_tracks": 3,
+   "original_unique_tracks": 83,
+   "original_unique_artists": 16
+  },
+  {
+   "user_id": "decent7830",
+   "original_listens": 200,
+   "phase2_matched": 0,
+   "phase3_matched": 0,
+   "modeling_events": 0,
+   "unique_tracks": 0,
+   "original_unique_tracks": 197,
+   "original_unique_artists": 5
+  },
+  {
+   "user_id": "carbonokabe",
+   "original_listens": 200,
+   "phase2_matched": 152,
+   "phase3_matched": 152,
+   "modeling_events": 118,
+   "unique_tracks": 66,
+   "original_unique_tracks": 106,
+   "original_unique_artists": 47
+  }
+ ],
+ "metadata_before": {
+  "High Agreement": 167,
+  "Needs Review": 25,
+  "Possible Mismatch": 28
+ },
+ "metadata_after": {
+  "High Agreement": 174,
+  "Needs Review": 27,
+  "Possible Mismatch": 19
+ },
+ "shared_pairs": [
+  {
+   "user_a": "Violet&Red",
+   "user_b": "carbonokabe",
+   "shared_tracks": 2,
+   "jaccard": 0.0238
+  },
+  {
+   "user_a": "mcc1979",
+   "user_b": "rob",
+   "shared_tracks": 2,
+   "jaccard": 0.1
+  }
+ ],
+ "planned_metrics": [
+  "Precision@10",
+  "Recall@10",
+  "NDCG@10",
+  "Catalog coverage"
+ ],
+ "source": "Aggregated results reported by the team's ListenBrainz x Embeat analysis (checkpoint 23 Nov 2026)"
+}
