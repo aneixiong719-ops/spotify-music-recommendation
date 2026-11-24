@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.DS_Store
+.ipynb_checkpoints/
+# full Embeat parquet dumps are ~9.5 GB: keep only the extracted CSV in data/raw/
+*.parquet
