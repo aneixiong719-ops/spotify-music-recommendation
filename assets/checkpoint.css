@@ -1,0 +1,3 @@
+.kpis.two { grid-template-columns: 1fr 1fr; margin: 0; }
+.radio { margin: 0 0 10px; font-size: 14px; }
+.radio label { margin-right: 14px; }
